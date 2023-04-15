@@ -8,7 +8,7 @@ public class Weapon {
     }
 
     public void makeSound() {
-        System.out.println(this.getClass().getSimpleName()  + " makes Sound!");
+        System.out.println(this.getClass().getSimpleName() + " makes Sound!");
     }
 }
 
@@ -41,21 +41,14 @@ interface FactoryMethodWeapon {
     Weapon create(String msg);
 }
 
-interface FactoryMethodCustomer {
-    Customer create(String msg);
-}
-
 class FactoryTest {
-    public static void test(FactoryMethodWeapon fw/*, FactoryMethodCustomer c*/) {
+    public static void test(FactoryMethodWeapon fw) {
         Stream.of("Elvish", "Orcish", "Elvish", "Elvish", "Orcish")
                 .map(fw::create)
-                .forEach(w -> {w.makeFire(); w.makeSound();});
-
-//        Stream.of("Elvish", "Orcish", "Elvish", "Elvish", "Orcish")
-//                .map(fw::create)
-//                .peek(Weapon::makeFire)
-//                .peek(Weapon::makeSound)
-//                .count(); // Terminal operation
+                .forEach(w -> {
+                    w.makeFire();
+                    w.makeSound();
+                });
     }
 }
 
