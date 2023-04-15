@@ -28,7 +28,7 @@ class Coin {
 
     void produce() {
         System.out.println(helper.getCoinType() + ": Produce "
-                + this.helper.getNum() + " numbers of"
+                + this.helper.getNum() + " numbers of "
                 + this.getClass().getSimpleName() + " coins!");
     }
 
