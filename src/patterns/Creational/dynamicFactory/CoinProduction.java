@@ -13,9 +13,6 @@ class BadShapeCreation extends RuntimeException {
 }
 
 class Coin {
-    public Coin() {
-    }
-
     public Coin(Helper helper) {
         this.helper = helper;
     }
@@ -47,26 +44,17 @@ class Golden extends Coin {
     public Golden(Helper helper) {
         super(helper);
     }
-
-    public Golden() {
-    }
 }
 
 class Silver extends Coin {
     public Silver(Helper helper) {
         super(helper);
     }
-
-    public Silver() {
-    }
 }
 
 class Copper extends Coin {
     public Copper(Helper helper) {
         super(helper);
-    }
-
-    public Copper() {
     }
 }
 
@@ -142,7 +130,6 @@ public class CoinProduction implements Alchemist {
             Coin c = (Coin) factories
                     .computeIfAbsent(helper, CoinProduction::load)
                     .newInstance(helper);
-            c.setHelper(helper);
             return c;
         } catch (Exception e) {
             throw new BadShapeCreation(e.getMessage());
