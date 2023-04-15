@@ -16,6 +16,10 @@ class Coin {
     public Coin() {
     }
 
+    public Coin(Helper helper) {
+        this.helper = helper;
+    }
+
     Helper helper;
 
     public Helper getHelper() {
@@ -34,22 +38,34 @@ class Coin {
 
     void engrave() {
         System.out.println(helper.getCoinType() + ": Engrave "
-                + this.helper.getNum() + " numbers of"
+                + this.helper.getNum() + " numbers of "
                 + this.getClass().getSimpleName() + " coins!");
     }
 }
 
 class Golden extends Coin {
+    public Golden(Helper helper) {
+        super(helper);
+    }
+
     public Golden() {
     }
 }
 
 class Silver extends Coin {
+    public Silver(Helper helper) {
+        super(helper);
+    }
+
     public Silver() {
     }
 }
 
 class Copper extends Coin {
+    public Copper(Helper helper) {
+        super(helper);
+    }
+
     public Copper() {
     }
 }
@@ -113,9 +129,8 @@ public class CoinProduction implements Alchemist {
         System.out.println("loading " + helper.getCoinType());
         try {
             return Class.forName("patterns.Creational.dynamicFactory." + helper.getCoinType())
-                    .getConstructor();
+                    .getConstructor(Helper.class);
         } catch (ClassNotFoundException | NoSuchMethodException e) {
-            System.out.println(e.getMessage());
             throw new BadShapeCreation(e.getMessage());
         }
     }
@@ -126,11 +141,10 @@ public class CoinProduction implements Alchemist {
             System.out.println("ccccccccccccccccccc");
             Coin c = (Coin) factories
                     .computeIfAbsent(helper, CoinProduction::load)
-                    .newInstance();
+                    .newInstance(helper);
             c.setHelper(helper);
             return c;
         } catch (Exception e) {
-            System.out.println(e.getMessage());
             throw new BadShapeCreation(e.getMessage());
         }
     }
