@@ -2,6 +2,7 @@ package patterns.Creational.polymorphicFactories;
 
 
 import java.util.Random;
+import java.util.function.Consumer;
 import java.util.function.Supplier;
 import java.util.stream.Stream;
 
@@ -53,13 +54,12 @@ class ImplementLogistics {
     static int i;
 
     public static void main(String[] args) {
-        RandomLogistics randomLogistics = new RandomLogistics(SeaLogistics::new, AirLogistics::new, RoadLogistics::new);
-//        Stream.generate(randomLogistics)
-//                .limit(6)
-//                .peek(Logistics::transportation)
-//                .peek(Logistics::movement)
-//                .peek(Logistics::storage)
-//                .count();
+        RandomLogistics randomLogistics = new RandomLogistics(
+                SeaLogistics::new,
+                AirLogistics::new,
+                RoadLogistics::new
+        );
+
         Stream.generate(randomLogistics).limit(6).forEach(o -> {
             String cargo = "CARGO" + ++i;
             System.out.println(":::::::::::::::::::::::::::::::::::");

@@ -127,10 +127,9 @@ public class CoinProduction implements Alchemist {
     public Coin create(Helper helper) {
         try {
             System.out.println("ccccccccccccccccccc");
-            Coin c = (Coin) factories
+            return  (Coin) factories
                     .computeIfAbsent(helper, CoinProduction::load)
                     .newInstance(helper);
-            return c;
         } catch (Exception e) {
             throw new BadShapeCreation(e.getMessage());
         }
