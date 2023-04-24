@@ -69,8 +69,8 @@ class StealHelper {
     }
 }
 
-class StealBanck extends GeneralSteal {
-    public StealBanck(StealHelper details) {
+class StealBank extends GeneralSteal {
+    public StealBank(StealHelper details) {
         super(details);
     }
 
@@ -122,7 +122,7 @@ class FactoryTest {
         stealHelpers.add(new StealHelper("Bank", "SmithBANK", "John", "Cach"));
         stealHelpers.add(new StealHelper("Bank", "SaraBANK", "Jack", "Golden"));
         stealHelpers.add(new StealHelper("Home", "YalomHOME", "Sam", "AllStaff"));
-        stealHelpers.add(new StealHelper("Bank", "StateBANK", "ProfesionalGroup", "AllStaff"));
+        stealHelpers.add(new StealHelper("Bank", "StateBANK", "ProfessionalGroup", "AllStaff"));
 
         stealHelpers.stream().forEach(stealFactory::create);
     }
@@ -131,14 +131,11 @@ class FactoryTest {
 class UseFactory implements StealFactory {
     @Override
     public GeneralSteal create(StealHelper stealHelpers) {
-        switch (stealHelpers.getTyp()) {
-            case "Bank":
-                return new StealBanck(stealHelpers);
-            case "Home":
-                return new StealHome(stealHelpers);
-            default:
-                throw new BadCreation(stealHelpers.getTyp());
-        }
+        return switch (stealHelpers.getTyp()) {
+            case "Bank" -> new StealBank(stealHelpers);
+            case "Home" -> new StealHome(stealHelpers);
+            default -> throw new BadCreation(stealHelpers.getTyp());
+        };
     }
 
     public static void main(String[] args) {

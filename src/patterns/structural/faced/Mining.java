@@ -68,26 +68,27 @@ class Load{
 }
 
 class MiningFaced{
-    static void makeMineSites(String site){
+    void makeMineSites(String site){
         MineSites mineSites = new MineSites(new Site(site));
         mineSites.checkingMineSite();
         mineSites.reportingHazards();
     }
-    static void makeResourceRemover(String resource){
+    void makeResourceRemover(String resource){
         ResourceRemover resourceRemover = new ResourceRemover(new Resource(resource));
         resourceRemover.blasting();
         resourceRemover.drill();
         resourceRemover.excavator();
     }
-    static void makeLoad(){
+    void makeLoad(){
         Load load = new Load();
         load.loadOntoTruck();
     }
 }
 public class Mining {
     public static void main(String[] args) {
-        MiningFaced.makeMineSites("Main SITE");
-        MiningFaced.makeResourceRemover("SUBSTANCES");
-        MiningFaced.makeLoad();
+        MiningFaced miningFaced = new MiningFaced();
+        miningFaced.makeMineSites("Main SITE");
+        miningFaced.makeResourceRemover("SUBSTANCES");
+        miningFaced.makeLoad();
     }
 }

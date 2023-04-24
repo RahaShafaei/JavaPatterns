@@ -133,7 +133,7 @@ class UseTower {
         lstWT.add(new ImplementBaseTower(new IvoryTower(), WizardsType.GENERAL));
         lstWT.add(new ImplementBaseTower(new GeneralTower(), WizardsType.GENERAL));
 
-        lstWT.stream().forEach(w ->{
+        lstWT.forEach(w ->{
             ++i;
             w.enterTower(w.getWizardsType(), "ET" + i);
             w.readSpell(w.getWizardsType(), "WR" + i);

@@ -12,25 +12,19 @@ class Slaying extends ChooseMethod {
 
 class GunSlaying extends Slaying {
     public GunSlaying() {
-        method = (dragon) -> {
-            System.out.println("Slaying " + dragon + " by GUN");
-        };
+        method = (dragon) -> System.out.println("Slaying " + dragon + " by GUN");
     }
 }
 
 class PoisonSlaying extends Slaying {
     public PoisonSlaying() {
-        method = (dragon) -> {
-            System.out.println("Slaying " + dragon + " by POISON");
-        };
+        method = (dragon) -> System.out.println("Slaying " + dragon + " by POISON");
     }
 }
 
 class TrapSlaying extends Slaying {
     public TrapSlaying() {
-        method = (dragon) -> {
-            System.out.println("Slaying " + dragon + " by TRAP");
-        };
+        method = (dragon) -> System.out.println("Slaying " + dragon + " by TRAP");
     }
 }
 

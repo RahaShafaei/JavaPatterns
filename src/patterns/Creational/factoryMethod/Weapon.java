@@ -55,14 +55,11 @@ class FactoryTest {
 class UseFactories implements FactoryMethodWeapon {
     @Override
     public Weapon create(String type) {
-        switch (type) {
-            case "Elvish":
-                return new Elvish();
-            case "Orcish":
-                return new Orcish();
-            default:
-                throw new BadShapeCreation(type);
-        }
+        return switch (type) {
+            case "Elvish" -> new Elvish();
+            case "Orcish" -> new Orcish();
+            default -> throw new BadShapeCreation(type);
+        };
     }
 
     public static void main(String[] args) {
