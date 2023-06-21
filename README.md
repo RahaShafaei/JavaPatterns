@@ -23,6 +23,7 @@ Based on the existing definitions, we have three general categories for design p
     * [State](https://github.com/RahaShafaei/JavaPatterns/tree/master/src/patterns/behavioral/state)
     * [Strategy](https://github.com/RahaShafaei/JavaPatterns/tree/master/src/patterns/behavioral/strategy)
     * [Template Method](https://github.com/RahaShafaei/JavaPatterns/tree/master/src/patterns/behavioral/templateMethod)
+    * [Iterator (__*From iluwatar Repo*__)](https://github.com/iluwatar/java-design-patterns/tree/master/iterator)
 * [Structural](https://github.com/RahaShafaei/JavaPatterns/tree/master/src/patterns/structural)
     * [Adapter](https://github.com/RahaShafaei/JavaPatterns/tree/master/src/patterns/structural/adapter)
     * [Faced](https://github.com/RahaShafaei/JavaPatterns/tree/master/src/patterns/structural/faced)
