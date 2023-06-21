@@ -6,9 +6,16 @@ In this collection, I tried to solve examples of the types of categories defined
 For the code of each of the patterns, I got ideas from the __[On Java 8](https://leanpub.com/onjava8)__ book of __[Bruce Eckel](https://leanpub.com/u/BruceEckel)__ the author of __*Thinking in Java*__ and [
 java-design-patterns](https://github.com/iluwatar/java-design-patterns), and then implemented these ideas based on what I learned.
 
-Based on the existing definitions, we have three general categories for design patterns, which I tried to do some examples of each category as an exercise, and these examples are given in the following three links:
+Based on the existing definitions, we have three general categories for design patterns, I tried to do some examples of each category as an exercise, and these examples are given in the following three links:
 
 * [Creational](https://github.com/RahaShafaei/JavaPatterns/tree/master/src/patterns/Creational)
+    * [Abstract Factories](https://github.com/RahaShafaei/JavaPatterns/tree/master/src/patterns/Creational/abstractFactories)
+    * [Builder](https://github.com/RahaShafaei/JavaPatterns/tree/master/src/patterns/Creational/builder)
+    * [Dynamic Factory](https://github.com/RahaShafaei/JavaPatterns/tree/master/src/patterns/Creational/dynamicFactory)
+    * [Factory Method](https://github.com/RahaShafaei/JavaPatterns/tree/master/src/patterns/Creational/factoryMethod)
+    * [Multiple Dispatching](https://github.com/RahaShafaei/JavaPatterns/tree/master/src/patterns/Creational/multipleDispatching)
+    * [Observer](https://github.com/RahaShafaei/JavaPatterns/tree/master/src/patterns/Creational/observer)
+    * [Polymorphic Factories](https://github.com/RahaShafaei/JavaPatterns/tree/master/src/patterns/Creational/polymorphicFactories)
 * [Behavioral](https://github.com/RahaShafaei/JavaPatterns/tree/master/src/patterns/behavioral)
 * [Structural](https://github.com/RahaShafaei/JavaPatterns/tree/master/src/patterns/structural)
 
