@@ -16,6 +16,7 @@ Based on the existing definitions, we have three general categories for design p
     * [Multiple Dispatching](https://github.com/RahaShafaei/JavaPatterns/tree/master/src/patterns/Creational/multipleDispatching)
     * [Observer](https://github.com/RahaShafaei/JavaPatterns/tree/master/src/patterns/Creational/observer)
     * [Polymorphic Factories](https://github.com/RahaShafaei/JavaPatterns/tree/master/src/patterns/Creational/polymorphicFactories)
+    * [Singleton (__*From iluwatar Repo*__)](https://github.com/iluwatar/java-design-patterns/tree/master/singleton)
 * [Behavioral](https://github.com/RahaShafaei/JavaPatterns/tree/master/src/patterns/behavioral)
     * [Chain Of Responsibility](https://github.com/RahaShafaei/JavaPatterns/tree/master/src/patterns/behavioral/chainOfResponsibility)
     * [Command](https://github.com/RahaShafaei/JavaPatterns/tree/master/src/patterns/behavioral/command)
