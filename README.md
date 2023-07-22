@@ -9,6 +9,22 @@ java-design-patterns](https://github.com/iluwatar/java-design-patterns), and the
 Based on the existing definitions, we have three general categories for design patterns, which I tried to do some examples of each category as an exercise, and these examples are given in the following three links:
 
 * [Creational](https://github.com/RahaShafaei/JavaPatterns/tree/master/src/patterns/Creational)
+    * [Abstract Factories](https://github.com/RahaShafaei/JavaPatterns/tree/master/src/patterns/Creational/abstractFactories)
+    * [Builder](https://github.com/RahaShafaei/JavaPatterns/tree/master/src/patterns/Creational/builder)
+    * [Dynamic Factory](https://github.com/RahaShafaei/JavaPatterns/tree/master/src/patterns/Creational/dynamicFactory)
+    * [Factory Method](https://github.com/RahaShafaei/JavaPatterns/tree/master/src/patterns/Creational/factoryMethod)
+    * [Multiple Dispatching](https://github.com/RahaShafaei/JavaPatterns/tree/master/src/patterns/Creational/multipleDispatching)
+    * [Observer](https://github.com/RahaShafaei/JavaPatterns/tree/master/src/patterns/Creational/observer)
+    * [Polymorphic Factories](https://github.com/RahaShafaei/JavaPatterns/tree/master/src/patterns/Creational/polymorphicFactories)
 * [Behavioral](https://github.com/RahaShafaei/JavaPatterns/tree/master/src/patterns/behavioral)
+    * [Chain Of Responsibility](https://github.com/RahaShafaei/JavaPatterns/tree/master/src/patterns/behavioral/chainOfResponsibility)
+    * [Command](https://github.com/RahaShafaei/JavaPatterns/tree/master/src/patterns/behavioral/command)
+    * [State](https://github.com/RahaShafaei/JavaPatterns/tree/master/src/patterns/behavioral/state)
+    * [Strategy](https://github.com/RahaShafaei/JavaPatterns/tree/master/src/patterns/behavioral/strategy)
+    * [Template Method](https://github.com/RahaShafaei/JavaPatterns/tree/master/src/patterns/behavioral/templateMethod)
 * [Structural](https://github.com/RahaShafaei/JavaPatterns/tree/master/src/patterns/structural)
+    * [Adapter](https://github.com/RahaShafaei/JavaPatterns/tree/master/src/patterns/structural/adapter)
+    * [Faced](https://github.com/RahaShafaei/JavaPatterns/tree/master/src/patterns/structural/faced)
+    * [Fluent Interface](https://github.com/RahaShafaei/JavaPatterns/tree/master/src/patterns/structural/fluentInterface)
+    * [Proxy](https://github.com/RahaShafaei/JavaPatterns/tree/master/src/patterns/structural/proxy)
 
